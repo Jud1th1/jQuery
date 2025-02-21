@@ -10,17 +10,19 @@
 <body>
 
     <h1>Is jQuery Working?</h1>
+    <p>Here is a paragraph</p>
+    <p>Here is a new paragraph</p>
+    <p>Here is another paragraph</p>
 
     <!--Add jQuery library here-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script>
-        if (window.jQuery) {
-            alert("jQuery is loaded! :-)");
-        }
-        else {
-            alert("jQuery is not loaded :-(");
-        }
-		
+        $('h1').css('color', 'red'); //setting the style color red for h1 ($ = jQuery)
+
+       //Add some paragraphs to the page & change the color 
+        $('p').css('color', 'blue'); 
+
     </script>
 
 </body>
